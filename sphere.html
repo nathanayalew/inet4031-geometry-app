@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Sphere Volume Calculator</h1>
+
+    <form method="POST">
+        <label>Radius:</label>
+        <input type="text" name="rad" required>
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if volume %}
+        <p>Radius: {{ radius }}</p>
+        <p>Volume: {{ volume }}</p>
+    {% endif %}
+
+    <br>
+    <a href="/">Home</a>
+  </body>
+</html>
